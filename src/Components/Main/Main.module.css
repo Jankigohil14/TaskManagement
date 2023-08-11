@@ -1,0 +1,36 @@
+/* -------------------------------------MAin Page Content----------------- */
+.main_page_content {
+    padding-left: 2rem;
+}
+
+.main_container {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+}
+
+.page_navigation {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.breadcrumbs {
+    min-width: 0;
+    color: '#555';
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .main_page_content {
+        flex-grow: 1;
+        padding-left: 18rem;
+    }
+
+    .main_container {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+    }
+    .page_navigation {
+        display: none;
+    }
+}

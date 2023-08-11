@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import React, {useEffect} from 'react';
+import AllRoutes from './routes/AllRoutes';
+import {useDispatch} from 'react-redux';
+import {UISliceAction} from './store/UISlice';
+const count = 2;
+const App = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        // count++;
+        const localstorageValue = localStorage.getItem('LOGGED_IN');
+        if (count === 2) {
+            if (localstorageValue === '1') {
+                dispatch(UISliceAction.login());
+            }
+        }
+    }, [dispatch]);
+    return (
+        <React.Fragment>
+            <AllRoutes />
+        </React.Fragment>
+    );
+};
 
 export default App;

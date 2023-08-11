@@ -1,0 +1,19 @@
+.sidebar_container {
+    width: 16rem;
+    height: 100vh;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.sidebar {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        padding-top: 7rem;
+        padding-bottom: 4rem;
+        flex-shrink: 0;
+    }
+}

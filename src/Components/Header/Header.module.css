@@ -1,0 +1,9 @@
+.header {
+    position: absolute;
+    z-index: 30;
+}
+.nav_bar_bg {
+    /* padding: 0 1rem; */
+    background: white;
+    position: fixed;
+}

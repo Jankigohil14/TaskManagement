@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('./assets/Fonts/Rubik/Rubik-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rubik-light';
+    src: url('./assets/Fonts/Rubik/Rubik-Light.ttf');
+}
+@font-face {
+    font-family: 'Rubik-medium';
+    src: url('./assets/Fonts/Rubik/Rubik-Medium.ttf');
+}
+@font-face {
+    font-family: 'Rubik-bold';
+    src: url('./assets/Fonts/Rubik/Rubik-Bold.ttf');
+}
+@font-face {
+    font-family: 'Rubik-black';
+    src: url('./assets/Fonts/Rubik/Rubik-Black.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: none;
+    border-color: #e5e7eb;
+}
+body {
+    margin: 0;
+    font-family: 'Rubik-Regular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 350;
+    color: rgb(30 41 59);
+    background-color: rgb(255, 255, 255);
+}
+
+.tasklogo {
+    font-size: medium;
+    font-family: 'Rubik-bold', sans-serif;
+    color: #555;
 }

@@ -1,0 +1,11 @@
+.login_container {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .login_container {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+}
